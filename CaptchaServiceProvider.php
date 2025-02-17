@@ -46,6 +46,10 @@ class CaptchaServiceProvider extends ServiceProvider
             __DIR__ . '/config/captcha.php' => config_path('captcha.php'),
         ], 'config');
 
+        $this->publishes([
+            __DIR__.'/resources/backgrounds' => public_path('vendor/captcha/backgrounds'),
+        ], 'captcha-background');
+        
         // HTTP routing
         if (! config('captcha.disable')) {
             /**
