@@ -47,8 +47,8 @@ class CaptchaServiceProvider extends ServiceProvider
         ], 'config');
 
         $this->publishes([
-            __DIR__.'/resources/backgrounds' => public_path('vendor/captcha/backgrounds'),
-        ], 'captcha-background');
+            __DIR__.'/resources' => public_path('vendor/captcha'),
+        ], 'captcha-assets');
         
         // HTTP routing
         if (! config('captcha.disable')) {
