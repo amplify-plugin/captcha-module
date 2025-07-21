@@ -2,7 +2,7 @@
 
 namespace Amplify\System\Captcha\Controllers;
 
-use packages\Captcha\Captcha;
+use Amplify\System\Captcha\Captcha;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
