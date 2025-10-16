@@ -169,7 +169,7 @@ class Captcha
     /**
      * @var int
      */
-    protected $expire = 60;
+    protected $expire = 360;
 
     /**
      * @var bool
